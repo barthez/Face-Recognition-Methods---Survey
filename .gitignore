@@ -1,0 +1,13 @@
+## generic and temp files
+*~
+*.tmp
+*.bak
+*.log
+*.aux
+*.dvi
+*.toc
+[#]*[#]
+
+
+## PDF output
+*.pdf
