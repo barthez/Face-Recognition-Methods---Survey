@@ -1,0 +1,71 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{anysize}
+\usepackage{makeidx}
+\usepackage{hyperref}
+
+
+
+\makeatletter
+\renewcommand{\maketitle}{
+\begin{titlepage}
+\begin{center}
+
+\LARGE{AKADEMIA GÓRNICZO-HUTNICZA}
+
+\vspace*{1cm}
+\includegraphics[scale=1.8]{agh.eps}
+\vspace*{1cm}
+
+\LARGE{im. Stanisława Staszica w Krakowie}
+
+\rule{\textwidth}{0.4mm}
+\LARGE \textsc{\@title}
+\rule{\textwidth}{0.4mm}
+
+\vspace*{5mm}
+
+
+\large
+\emph{Autorzy:}\\
+Bartłomiej \textsc{Bułat}\\
+Tomasz \textsc{Czarnik}\\
+Krzysztof \textsc{Śmiłek}\\
+
+\vfill
+\vspace*{\stretch{8}}
+\rule{\textwidth}{0.4mm}
+
+\large{Wydział Elektroniki, Automatyki, Informatyki i Elektrotechniki}\\
+\large{Katedra Automatyki}\\
+\large{Laboratorium Biocybernetyki}\\
+\vspace*{\stretch{7}}
+\@date
+
+\end{center}
+
+\end{titlepage}
+}
+\makeatother
+
+\title{Badanie metod rozpoznawania\\twarzy na obrazach}
+\date{\today}
+
+\makeindex
+
+\begin{document}
+
+\maketitle
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\end{document}

@@ -4,10 +4,12 @@
 *.bak
 *.log
 *.aux
-*.dvi
 *.toc
+*.idx
 [#]*[#]
 
 
-## PDF output
+## output
+*.out
+*.dvi
 *.pdf
