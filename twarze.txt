@@ -1,0 +1,18 @@
+0. napisac do ogieli czy ten temat moze byc ;)
+
+1. Spis treœci
+
+TSM Wstêp: (analiza wybranych metod rozpoznawania twarzy, porównanie, zastosowanie)
+rozwiniecie:
+BB - problem 
+BB - ogólna zasada dzialania
+KS - kolor, odleg³oœci itd
+KS - nn/cnn
+TSM - modele aktywnego kszta³tu 
+- wspomniec o syntaktycznych
+
+zakonczenie: (porównanie i zastosowanie)
+biblio....
+
+
+2. PPT prezentacja
