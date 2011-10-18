@@ -68,10 +68,18 @@ Krzysztof \textsc{Śmiłek}\\
 
 \newpage
 
-\section{Metody geometryczne}
+\section{Wstep}
+
+\subsection{Problem rozpoznawania twarzy i ogólny algorytm}
+
+Rozpoznanie twarzy na obrazie nie jest trywialnym problemem. Składa się ono z kilku etapów o różnej złożoności. Na złożoność zadania wpływa to, że trudne jest uzyskanie zdjęcia twarzy na jednolitym tle i zawsze w tej samej pozycji. Czasami do akwizycji obrazu twarzy stosuje się inne metody niż normlane zdjęce 2D. Często wykorzystywane metody to obrazy termowizyjne dostarczajęce dodatkowych informacji o rozkładzie temperatur na twarzy oraz metody operujące na obrazach 3D, uzyskanych zapomocą stereowizji lub specjalnych skanerów. Po akwizycji obraz następuje etap wyszukiwania wzorców które są kandydatami na bycie twarzą. Najprostrze metody to te bazujące na kolorze twarzy. Innymi metodami są metody statystyczne jak również sieci neuronowe (które wykorzystywane są nie tylko do lokalizacji, ale i do klasyfikacji twarzy). Wykryte obiekty są następne klasyfikowane poprzez porównywanie wektorów cech wyliczonych ze znalezionych obiektów. Głowne metody ekstrakcji cech to metody strukturalne (opis lokalnych cech twarzy tj. oczy, usta czy nos za pomocą współrzednych czy parametrów statystycznych) oraz metody całościowe gdzie cała twarz dostarcza danych do analizy np. PCA.
+
+\section{Metody Rozpoznawania Twarzy}
+
+\subsection{Metody geometryczne}
 W metodach tych twarz charakteryzowana jest przez zbiór wartości kątów, odległości czy też pól wyznaczonych w oparciu o charakterystyczne punkty, takie jak środki oczu, koniec nosa itd. Problemem jest tutaj precyzyjne zlokalizowanie odpowiednich fragmentów twarzy. Staje się to szczególnie trudne gdy zdjęcie poddane analizie nie jest wykonane bezpośrednio od przodu, gdyż wówczas niektóre istotne części twarzy mogą być nawet całkowicie niewidoczne. Sporządzanie opisu matematycznego poprzez wyznaczenie geometrycznych parametrów było jednym z pierwszych, najbardziej intuicyjnych pomysłów na ekstrakcję cech w rozpoznawaniu twarzy. Obecnie jednak podejście to praktycznie nie jest już rozwijane, gdyż istnieją mechanizmy wykrywające twarze szybciej oraz z większą skutecznością.
 
-\section{Metoda analizy kolorów}
+\subsection{Metoda analizy kolorów}
 W metodzie tej na podstawie odpowiednich schematów kolorów wykrywa się wszystkie elementy na obrazie zgodne z danym schematem. Niestety metoda ta jest bardzo wrażliwa ponieważ poza twarzą wykrywa też dłonie, szyję itp. Dlatego też dodatkowo zwykle należy przeprowadzić po niej selekcję po kształcie i rozmiarze wykrytych regionów. 
 \\
 \\
@@ -88,7 +96,7 @@ W metodzie tej na podstawie odpowiednich schematów kolorów wykrywa się wszyst
 \item obiekty o kolorze podobnym do koloru skóry są także wykrywane
 \end{itemize}
 
-\section{Metoda Sieci neuronowych}
+\subsection{Metoda Sieci neuronowych}
 Operację wykrywania twarzy za pomocą tego systemu można podzielić na 3 główne składowe:
 \begin{enumerate}
 \item Inicjalizacja (projektowanie i tworzenie sieci neuronowych)
@@ -121,5 +129,11 @@ Wady:
 \item  Sukces uczenia nie jest gwarantowany 
 \item  Problemy z wyborem danych do treningu sieci 
 \end{itemize}
+
+\section{Podsumowanie}
+
+\section{Bibliografia}
+
+\bibliography{bibliography}
 
 \end{document}
