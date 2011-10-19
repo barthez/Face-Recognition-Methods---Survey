@@ -130,6 +130,35 @@ Wady:
 \item  Problemy z wyborem danych do treningu sieci 
 \end{itemize}
 
+\subsection{Model aktywnego kształtu}
+Tim Cootes i Chris Taylor w roku 1995 opracowali metodę modelu aktywnego kształtu (Active Shape Model). Jest to model statyczny, w którym jego kształt poprzez dozwolone deformacje próbuje się automatycznie dopasowywać do obiektu znajdującego się na obrazie. Określa się wzorzec obiektu jako model rozkładu punktów (Point Distribution Model), czyli zbiór etykietowanych punktów określających poszukiwany kształt. Następnie przeprowadzany jest proces uczenia w którym zbiera się informacje o różnych modyfikacjach wzorca. W tym celu przeważnie na kolejne zdjęcia testowe twarzy nanosi są ręcznie punkty charakterystyczne. Otrzymane wektory punktów poddaje się procesowi normalizacji (taki model będzie można dowolnie przeskalowywać, zachowana jest jedynie informacja o kształcie). Na koniec należy obliczyć kształt średni, odchylenie od średniej dla każdego elementu zbioru uczącego oraz obliczyć wektory własne odpowiedniej macierzy kowariancji. Konstruuje się model utworzony z średniego kształtu i sumy ważonej najbardziej charakterystycznych deformacji. Algorytm pozwala na deformację kształtu średniego tylko w ograniczonym zakresie.\\
+\\
+\noindent
+Lista kroków algorytmu wyszukiwania obiektu:
+\begin{itemize}
+\item badane jest sąsiedztwo każdego punktu charakterystycznego w poszukiwaniu odpowiedniej deformacji
+\item obliczane są optymalne parametry przesunięcia, obrotu, skali tak aby umieścić niezdeformowany model jak najbliżej rzeczywistego kształtu
+\item uważając na dopuszczalny zakres zmian uaktualnia się parametry modelu dopasowując go jak najdokładniej do obrazu
+\end{itemize}
+
+Przesunięcie punktów charakterystycznych określa się na podstawie odnalezionych krawędzi znajdujących się na linii prostopadłej do brzegu modelu. Dysponując informacją o poziomach jasności wokół punktów modelu można też próbować odnajdywać miejsca w sąsiedztwie dla którego profil jasności najbardziej przypomina ten z modelu. \\
+
+\noindent 
+Zalety:
+\begin{itemize}
+\item duża elastyczność - model potrafi dopasować się do różnych kształtów
+\item uniwersalny - kształt określany jest w drodze uczenia
+\item pomocny przy klasyfikowaniu i identyfikowaniu twarzy
+\end{itemize}
+
+\noindent 
+Wady:
+\begin{itemize}
+\item  czasochłonne i trudne uczenie modelu 
+\item  mało odporny na zmieniające się warunki oświetlenia, zróżnicowanego tła, bardziej realistycznych warunków
+\item  słabe wyniki dla osób z długimi ciemnymi włosami
+\end{itemize}
+
 \section{Podsumowanie}
 
 \section{Bibliografia}
