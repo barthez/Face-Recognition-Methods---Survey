@@ -53,7 +53,7 @@ Krzysztof \textsc{Śmiłek}\\
 }
 \makeatother
 
-\title{Badanie metod rozpoznawania\\twarzy na obrazach}
+\title{Metody rozpoznawania twarzy \\przegląd i porównanie}
 \date{\today}
 
 \makeindex
@@ -69,6 +69,8 @@ Krzysztof \textsc{Śmiłek}\\
 \newpage
 
 \section{Wstep}
+
+Rozpoznawanie twarzy od zawsze było dla ludzi najbardziej naturalnym sposobem identyfikacji osób. Małe dzieci bez trudu rozpoznają twarze swoich rodziców. Nie sprawia nam również większego problemu odnajdywanie twarzy nawet na bardzo złożonych obrazach. Potrafimy też określić płeć, przybliżony wiek i pochodzenie tylko na podstawie zdjęcia twarzy danej osoby. Nie dziwi więc fakt, że w dobie prężnie rozwijającej się technologii, coraz szybszych komputerów i ogólnego postępu szukamy sposobów na w pełni automatyczne, cyfrowe metody odnajdywania oraz rozpoznawania twarzy. Zastosowań takich rozwiązań nie trzeba długo szukać: począwszy od rozrywki (konsole nowej generacji, rozpoznawanie osób i uśmiechu w aparatach fotograficznych) przez metody autoryzacji (logowanie na komputerze, w banku) a skończywszy na bezpieczeństwie kraju (rozpoznawanie terrorystów na lotnisku).  Zagadnienie to nie jest nowe, powstało już wiele mniej lub bardziej skutecznych algorytmów. Celem niniejszej pracy jest przegląd popularniejszych rozwiązań i próba ich porównania.
 
 \subsection{Problem rozpoznawania twarzy i ogólny algorytm}
 
@@ -142,6 +144,10 @@ Lista kroków algorytmu wyszukiwania obiektu:
 \end{itemize}
 
 Przesunięcie punktów charakterystycznych określa się na podstawie odnalezionych krawędzi znajdujących się na linii prostopadłej do brzegu modelu. Dysponując informacją o poziomach jasności wokół punktów modelu można też próbować odnajdywać miejsca w sąsiedztwie dla którego profil jasności najbardziej przypomina ten z modelu. \\
+
+\vspace*{1cm}
+\includegraphics[scale=0.40]{active_shape.png}
+\vspace*{1cm}
 
 \noindent 
 Zalety:
