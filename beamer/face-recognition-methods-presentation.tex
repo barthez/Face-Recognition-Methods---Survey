@@ -1,0 +1,111 @@
+\documentclass[xcolor=table]{beamer}
+
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{listings}
+\usepackage{lmodern}
+\usepackage{textcomp}
+
+
+\usetheme[language=polish]%
+  {Goddard}
+
+\newcommand{\filepath}{\texttt}
+\newcommand{\command}{\texttt}
+\newcommand{\email}[1]{\href{mailto:#1}{\texttt{#1}}}
+\newcommand{\latexcode}{\texttt}
+\newcommand{\parameter}[1]{\textlangle #1\textrangle}
+
+
+\lstset{basicstyle=\ttfamily,keywordstyle=\color{goddardblue}\bfseries,commentstyle=\color{goddardblue!75}\itshape,columns=flexible}
+
+\rowcolors{1}{goddardblue!50}{goddardblue!30}
+
+
+\title{Metody rozpoznawania twarzy}
+\subtitle{przeglad i porównanie}
+\author{Bartłomiej Bułat\\
+Tomasz Czarnik\\
+Krzysztof Śmiłek\\}
+
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Plan}
+  \tableofcontents
+\end{frame}
+
+
+\section{Wstęp}
+
+\begin{frame}
+  \frametitle{Wstęp}
+
+  beamer-goddard is a \LaTeX{} Beamer theme inspired by the Goddard Fedora~13 theme\footnote{\url{http://fedoraproject.org/wiki/F13_Artwork}} and the Anaconda GUI layout\footnote{\url{http://fedoraproject.org/wiki/Anaconda}}.
+
+  \begin{block}{Comments, suggestions or bug reports ?}
+    Please send a mail at: \email{melmorabity@fedoraproject.org}
+  \end{block}
+\end{frame}
+
+
+\section{Metody rozpoznawania twarzy}
+
+\subsection{Metody geometryczne}
+\begin{frame}
+  \frametitle{Metody geometryczne}
+
+  dodać info o metodzie
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Metody geometryczne}
+
+  a to jest drugi slajd geometrycznych etc
+
+\end{frame}
+
+\subsection{Metoda analizy kolorów}
+\begin{frame}
+  \frametitle{Metoda analizy kolorów}
+
+  dodać info o metodzie
+
+\end{frame}
+
+\subsection{Metoda sieci neuronowych}
+\begin{frame}
+  \frametitle{Metoda sieci neuronowych}
+
+  dodać info o metodzie
+
+\end{frame}
+
+\subsection{Model aktywnego kształtu}
+\begin{frame}
+  \frametitle{Model aktywnego kształtu}
+
+  dodać info o metodzie
+
+\end{frame}
+
+
+\section{Podsumowanie}
+
+\begin{frame}[fragile]
+  \frametitle{Podsumowanie}
+
+  parę słów podsumowania tutaj
+  
+\end{frame}
+
+
+\end{document}

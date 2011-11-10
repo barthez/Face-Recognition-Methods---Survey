@@ -1,0 +1,59 @@
+*****************************
+* README FOR BEAMER-GODDARD *
+*****************************
+
+
+beamer-goddard is a LaTeX Beamer theme inspired by the Goddard
+Fedora 13 theme (http://fedoraproject.org/wiki/F13_Artwork)
+and the Anaconda GUI layout
+(http://fedoraproject.org/wiki/Anaconda).
+
+For any comment or suggestion, please send a mail at:
+melmorabity@fedoraproject.org.
+
+
+LICENSE
+*******
+
+The LaTeX files can be redistributed and/or modified under the terms
+of the GNU Public License, version 2, or any later version.
+
+The png images were taken from the generic-logos rpm package for
+Fedora 13, licensed under the GNU Public License, version 2.
+
+
+INSTALLATION
+************
+
+Copy texmf stuff from archive to the root of your LaTeX distribution:
+- under Windows (MikTeX/TeX Live), in C:\texmf,
+- under Unix (teTeX/TeX Live), in ~/texmf (available only for a user) or in
+  /usr/local/share/texmf (for any user).
+Then run mktexlsr.
+
+
+HOW TO USE IT?
+**************
+
+You just have to call in the preamble of your document the Goddard theme:
+
+   \usetheme{Goddard}
+
+
+Two options are available:
+
+* language=english|french|german|italian|portuguese|spanish
+
+  By default, the labels of the buttons at the bottom of the slides
+  are written in English; to use another language, just call the
+  theme like this, for example for French:
+    \usetheme[language=french]{Goddard}
+
+* oldstylearrows
+
+  By default, arrows in buttons look like those available in the
+  GNOME 2.30 default icon theme. When enabled, this option make
+  arrows look like those in previous GNOME versions icon theme.
+
+
+An example is available in texmf/doc/beamer-goddard/.
