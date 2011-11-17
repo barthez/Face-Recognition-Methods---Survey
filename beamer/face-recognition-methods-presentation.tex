@@ -92,11 +92,72 @@ Krzysztof Śmiłek\\}
 \subsection{Model aktywnego kształtu}
 \begin{frame}
   \frametitle{Model aktywnego kształtu}
-
-  dodać info o metodzie
-
+  \begin{itemize}
+  \uncover <1-> {\item Idea opracowana w 1995 roku przez Tim Cootesa oraz Chrisa Taylora}
+  \uncover <2-> {\item Model statyczny, który "próbuje" dopasować się do obiektu na obrazie}
+  \uncover <3-> {\item Wzorzec określany przez rozkład punktów}
+  \uncover <4-> {\item Proces uczenia polega na zaznaczeniu punktów twarzy na wielu zdjęciach testowych}
+  \uncover <5-> {\item Otrzymane wektory normalizuje się, po czym na podstawie średniego kształtu, odchylenia od średniej i macierzy kowariancji wyznaczony zostaje model}
+ \end{itemize}
 \end{frame}
 
+\begin{frame}
+  \frametitle{Model aktywnego kształtu - maska}
+\begin{center}
+  \begin{figure}
+    \includegraphics[scale=0.4]{aktywny2.png}
+    \caption{Przykład dopasowania maski}
+  \end{figure}
+\end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Model aktywnego kształtu - maska}
+\begin{center}
+  \begin{figure}
+    \includegraphics[scale=0.4]{aktywny3.png}
+    \caption{Przykład dopasowania maski}
+  \end{figure}
+\end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Model aktywnego kształtu - maska}
+\begin{center}
+  \begin{figure}
+    \includegraphics[scale=0.4]{aktywny1.png}
+    \caption{Przykład dopasowania maski}
+  \end{figure}
+\end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Model aktywnego kształtu \\ - lista kroków wyszukiwania obiektu}
+  \begin{itemize}
+\item Badane jest sąsiedztwo każdego punktu charakterystycznego w poszukiwaniu odpowiedniej deformacji
+\item Obliczane są optymalne parametry przesunięcia, obrotu, skali tak aby umieścić niezdeformowany model jak najbliżej rzeczywistego kształtu
+\item Uważając na dopuszczalny zakres zmian uaktualnia się parametry modelu dopasowując go jak najdokładniej do obrazu
+\item Przesunięcie punktów charakterystycznych na podstawie krawędzi prostopadłych do brzegu modelu oraz poziomów jasności
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Model aktywnego kształtu - podsumowanie}
+   \uncover <1-> { Zalety:
+\begin{itemize}
+\item Duża elastyczność - model potrafi dopasować się do różnych kształtów
+\item Uniwersalny - kształt określany jest w drodze uczenia
+\item Pomocny przy klasyfikowaniu i identyfikowaniu twarzy
+\end{itemize}
+}
+  \uncover <2-> {\noindent 
+Wady:
+\begin{itemize}
+\item  Czasochłonne i trudne uczenie modelu 
+\item  Mało odporny na zmieniające się warunki oświetlenia, zróżnicowanego tła, bardziej realistycznych warunków
+\item  Słabe wyniki dla osób z długimi ciemnymi włosami
+\end{itemize}}
+\end{frame}
 
 \section{Podsumowanie}
 

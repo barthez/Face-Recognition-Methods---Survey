@@ -23,15 +23,25 @@
 \headcommand {\slideentry {2}{3}{1}{7/7}{Metoda sieci neuronowych}{0}}
 \headcommand {\beamer@framepages {7}{7}}
 \headcommand {\beamer@subsectionentry {0}{2}{4}{8}{Model aktywnego kszta\IeC {\l }tu}}\headcommand {\beamer@subsectionpages {7}{7}}
-\headcommand {\slideentry {2}{4}{1}{8/8}{Model aktywnego kszta\IeC {\l }tu}{0}}
-\headcommand {\beamer@framepages {8}{8}}
-\headcommand {\sectionentry {3}{Podsumowanie}{9}{Podsumowanie}{0}}
-\headcommand {\beamer@sectionpages {4}{8}}
-\headcommand {\beamer@subsectionpages {8}{8}}
-\headcommand {\slideentry {3}{0}{2}{9/9}{}{0}}
-\headcommand {\beamer@framepages {9}{9}}
-\headcommand {\beamer@partpages {1}{9}}
-\headcommand {\beamer@subsectionpages {9}{9}}
-\headcommand {\beamer@sectionpages {9}{9}}
-\headcommand {\beamer@documentpages {9}}
-\headcommand {\def \inserttotalframenumber {9}}
+\headcommand {\slideentry {2}{4}{1}{8/12}{Model aktywnego kszta\IeC {\l }tu}{0}}
+\headcommand {\beamer@framepages {8}{12}}
+\headcommand {\slideentry {2}{4}{2}{13/13}{Model aktywnego kszta\IeC {\l }tu}{0}}
+\headcommand {\beamer@framepages {13}{13}}
+\headcommand {\slideentry {2}{4}{3}{14/14}{Model aktywnego kszta\IeC {\l }tu}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\slideentry {2}{4}{4}{15/15}{Model aktywnego kszta\IeC {\l }tu}{0}}
+\headcommand {\beamer@framepages {15}{15}}
+\headcommand {\slideentry {2}{4}{5}{16/16}{Model aktywnego kszta\IeC {\l }tu}{0}}
+\headcommand {\beamer@framepages {16}{16}}
+\headcommand {\slideentry {2}{4}{6}{17/18}{Model aktywnego kszta\IeC {\l }tu}{0}}
+\headcommand {\beamer@framepages {17}{18}}
+\headcommand {\sectionentry {3}{Podsumowanie}{19}{Podsumowanie}{0}}
+\headcommand {\beamer@sectionpages {4}{18}}
+\headcommand {\beamer@subsectionpages {8}{18}}
+\headcommand {\slideentry {3}{0}{7}{19/19}{}{0}}
+\headcommand {\beamer@framepages {19}{19}}
+\headcommand {\beamer@partpages {1}{19}}
+\headcommand {\beamer@subsectionpages {19}{19}}
+\headcommand {\beamer@sectionpages {19}{19}}
+\headcommand {\beamer@documentpages {19}}
+\headcommand {\def \inserttotalframenumber {14}}
