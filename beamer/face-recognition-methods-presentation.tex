@@ -47,12 +47,24 @@ Krzysztof Śmiłek\\}
 
 \begin{frame}
   \frametitle{Wstęp}
+  Rozpoznawanie twarzy to najbardziej naturalny sposób identyfikacji osób. Wraz z rozwojem technologii i mocy obliczeniowej szuka się coraz doskonalszych rozwiązań uskuteczniających to zadanie.\\[\baselineskip]
+\uncover <2-> {Przykładowe zastosowania:
+\begin{itemize}
+\item Fotografia cyfrowa
+\item Metody autoryzacji
+\item Bezpieczeństwo w strefie publicznej
+\item Rozrywka (konsole nowej generacji)
+\end{itemize}}
+\end{frame}
 
-  beamer-goddard is a \LaTeX{} Beamer theme inspired by the Goddard Fedora~13 theme\footnote{\url{http://fedoraproject.org/wiki/F13_Artwork}} and the Anaconda GUI layout\footnote{\url{http://fedoraproject.org/wiki/Anaconda}}.
-
-  \begin{block}{Comments, suggestions or bug reports ?}
-    Please send a mail at: \email{melmorabity@fedoraproject.org}
-  \end{block}
+\subsection{Problem i ogólny algorytm}
+\begin{frame}
+  \frametitle{Problem rozpoznawania twarzy}
+    01:04 póżno już, idę spać\\tsm
+\end{frame}
+\begin{frame}
+  \frametitle{Ogólny algorytm}
+   
 \end{frame}
 
 
@@ -105,27 +117,9 @@ Krzysztof Śmiłek\\}
   \frametitle{Model aktywnego kształtu - maska}
 \begin{center}
   \begin{figure}
-    \includegraphics[scale=0.4]{aktywny2.png}
-    \caption{Przykład dopasowania maski}
-  \end{figure}
-\end{center}
-\end{frame}
-
-\begin{frame}
-  \frametitle{Model aktywnego kształtu - maska}
-\begin{center}
-  \begin{figure}
-    \includegraphics[scale=0.4]{aktywny3.png}
-    \caption{Przykład dopasowania maski}
-  \end{figure}
-\end{center}
-\end{frame}
-
-\begin{frame}
-  \frametitle{Model aktywnego kształtu - maska}
-\begin{center}
-  \begin{figure}
-    \includegraphics[scale=0.4]{aktywny1.png}
+    \only<1> {\includegraphics[scale=0.4]{aktywny2.png}}
+    \only<2> {\includegraphics[scale=0.4]{aktywny3.png}}
+    \only<3> {\includegraphics[scale=0.4]{aktywny1.png}}
     \caption{Przykład dopasowania maski}
   \end{figure}
 \end{center}
@@ -158,15 +152,24 @@ Wady:
 \item  Słabe wyniki dla osób z długimi ciemnymi włosami
 \end{itemize}}
 \end{frame}
+\section{Porównianie}
+
+\begin{frame}
+  \frametitle{Porównanie}
+
+  porównanie
+
+\end{frame}
 
 \section{Podsumowanie}
 
-\begin{frame}[fragile]
+\begin{frame}
   \frametitle{Podsumowanie}
 
   parę słów podsumowania tutaj
-  
+
 \end{frame}
+
 
 
 \end{document}
