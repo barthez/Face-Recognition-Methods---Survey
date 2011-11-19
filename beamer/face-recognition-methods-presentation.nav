@@ -19,35 +19,37 @@
 \headcommand {\beamer@subsectionentry {0}{2}{1}{7}{Metody geometryczne}}\headcommand {\beamer@subsectionpages {7}{6}}
 \headcommand {\slideentry {2}{1}{1}{7/7}{Metody geometryczne}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\slideentry {2}{1}{2}{8/8}{Metody geometryczne}{0}}
-\headcommand {\beamer@framepages {8}{8}}
-\headcommand {\beamer@subsectionentry {0}{2}{2}{9}{Metoda analizy kolor\IeC {\'o}w}}\headcommand {\beamer@subsectionpages {7}{8}}
-\headcommand {\slideentry {2}{2}{1}{9/9}{Metoda analizy kolor\IeC {\'o}w}{0}}
-\headcommand {\beamer@framepages {9}{9}}
-\headcommand {\beamer@subsectionentry {0}{2}{3}{10}{Metoda sieci neuronowych}}\headcommand {\beamer@subsectionpages {9}{9}}
-\headcommand {\slideentry {2}{3}{1}{10/10}{Metoda sieci neuronowych}{0}}
-\headcommand {\beamer@framepages {10}{10}}
-\headcommand {\beamer@subsectionentry {0}{2}{4}{11}{Model aktywnego kszta\IeC {\l }tu}}\headcommand {\beamer@subsectionpages {10}{10}}
-\headcommand {\slideentry {2}{4}{1}{11/15}{Model aktywnego kszta\IeC {\l }tu}{0}}
-\headcommand {\beamer@framepages {11}{15}}
-\headcommand {\slideentry {2}{4}{2}{16/18}{Model aktywnego kszta\IeC {\l }tu}{0}}
-\headcommand {\beamer@framepages {16}{18}}
-\headcommand {\slideentry {2}{4}{3}{19/19}{Model aktywnego kszta\IeC {\l }tu}{0}}
-\headcommand {\beamer@framepages {19}{19}}
-\headcommand {\slideentry {2}{4}{4}{20/21}{Model aktywnego kszta\IeC {\l }tu}{0}}
-\headcommand {\beamer@framepages {20}{21}}
-\headcommand {\sectionentry {3}{Por\IeC {\'o}wnianie}{22}{Por\IeC {\'o}wnianie}{0}}
-\headcommand {\beamer@sectionpages {7}{21}}
-\headcommand {\beamer@subsectionpages {11}{21}}
-\headcommand {\slideentry {3}{0}{5}{22/22}{}{0}}
-\headcommand {\beamer@framepages {22}{22}}
-\headcommand {\sectionentry {4}{Podsumowanie}{23}{Podsumowanie}{0}}
-\headcommand {\beamer@sectionpages {22}{22}}
-\headcommand {\beamer@subsectionpages {22}{22}}
-\headcommand {\slideentry {4}{0}{6}{23/23}{}{0}}
+\headcommand {\slideentry {2}{1}{2}{8/10}{Metody geometryczne}{0}}
+\headcommand {\beamer@framepages {8}{10}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{11}{Metoda analizy kolor\IeC {\'o}w}}\headcommand {\beamer@subsectionpages {7}{10}}
+\headcommand {\slideentry {2}{2}{1}{11/11}{Metoda analizy kolor\IeC {\'o}w}{0}}
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\slideentry {2}{2}{2}{12/13}{Metoda analizy kolor\IeC {\'o}w}{0}}
+\headcommand {\beamer@framepages {12}{13}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{14}{Metoda sieci neuronowych}}\headcommand {\beamer@subsectionpages {11}{13}}
+\headcommand {\slideentry {2}{3}{1}{14/14}{Metoda sieci neuronowych}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\beamer@subsectionentry {0}{2}{4}{15}{Model aktywnego kszta\IeC {\l }tu}}\headcommand {\beamer@subsectionpages {14}{14}}
+\headcommand {\slideentry {2}{4}{1}{15/19}{Model aktywnego kszta\IeC {\l }tu}{0}}
+\headcommand {\beamer@framepages {15}{19}}
+\headcommand {\slideentry {2}{4}{2}{20/22}{Model aktywnego kszta\IeC {\l }tu}{0}}
+\headcommand {\beamer@framepages {20}{22}}
+\headcommand {\slideentry {2}{4}{3}{23/23}{Model aktywnego kszta\IeC {\l }tu}{0}}
 \headcommand {\beamer@framepages {23}{23}}
-\headcommand {\beamer@partpages {1}{23}}
-\headcommand {\beamer@subsectionpages {23}{23}}
-\headcommand {\beamer@sectionpages {23}{23}}
-\headcommand {\beamer@documentpages {23}}
-\headcommand {\def \inserttotalframenumber {15}}
+\headcommand {\slideentry {2}{4}{4}{24/25}{Model aktywnego kszta\IeC {\l }tu}{0}}
+\headcommand {\beamer@framepages {24}{25}}
+\headcommand {\sectionentry {3}{Por\IeC {\'o}wnianie}{26}{Por\IeC {\'o}wnianie}{0}}
+\headcommand {\beamer@sectionpages {7}{25}}
+\headcommand {\beamer@subsectionpages {15}{25}}
+\headcommand {\slideentry {3}{0}{5}{26/26}{}{0}}
+\headcommand {\beamer@framepages {26}{26}}
+\headcommand {\sectionentry {4}{Podsumowanie}{27}{Podsumowanie}{0}}
+\headcommand {\beamer@sectionpages {26}{26}}
+\headcommand {\beamer@subsectionpages {26}{26}}
+\headcommand {\slideentry {4}{0}{6}{27/27}{}{0}}
+\headcommand {\beamer@framepages {27}{27}}
+\headcommand {\beamer@partpages {1}{27}}
+\headcommand {\beamer@subsectionpages {27}{27}}
+\headcommand {\beamer@sectionpages {27}{27}}
+\headcommand {\beamer@documentpages {27}}
+\headcommand {\def \inserttotalframenumber {16}}

@@ -61,9 +61,12 @@ Krzysztof Śmiłek\\}
 \begin{frame}
   \frametitle{Problem rozpoznawania twarzy}
     01:04 póżno już, idę spać\\tsm
+
 \end{frame}
 \begin{frame}
   \frametitle{Ogólny algorytm}
+
+Jakiś schemat systemu??
    
 \end{frame}
 
@@ -74,14 +77,36 @@ Krzysztof Śmiłek\\}
 \begin{frame}
   \frametitle{Metody geometryczne}
 
-  dodać info o metodzie
-
+Jest to jedno z pierwszych, najbardziej intuicyjnych podejść w dziedzinie rozpoznawania twarzy. \\
+Twarz charakteryzowana jest przez zbiór wartości kątów, odległości czy też pól wyznaczonych w oparciu o charakterystyczne punkty na obrazie. Badane są między innymi:
+\begin{itemize}
+\item szerokość/wysokość twarzy
+\item szerokość/długość nosa
+\item odległości między: linią oczu i linią ust, środkami oczu, najdalszymi/najbliższymi punktami oczu, oczami i nosem
+\item matematyczny opis kształtu twarzy (owal) \\i krzywych itp.
+\end{itemize}
 \end{frame}
 
 \begin{frame}
   \frametitle{Metody geometryczne}
+ 
+Zalety:
+\begin{itemize}
+\item szybkość działania
+\item zadowalające rezultaty działania
+\end{itemize}
 
-  a to jest drugi slajd geometrycznych etc
+\vspace{10pt}
+\uncover <2-> {
+Wady:
+\begin{itemize}
+\item potrzeba precyzyjnego zlokalizowania odpowienich fragmentów twarzy
+\item zawodność metody gdy zdjęcie twarzy jest wykonane z profilu lub gdy część twarzy jest przysłonięta
+\end{itemize}}
+
+\vspace{10pt}
+\uncover <3-> {
+Obecnie, podejście to praktycznie nie jest już rozwijane, gdyż istnieją mechanizmy wykrywające twarze szybciej oraz z większą skutecznością.}
 
 \end{frame}
 
@@ -89,7 +114,32 @@ Krzysztof Śmiłek\\}
 \begin{frame}
   \frametitle{Metoda analizy kolorów}
 
-  dodać info o metodzie
+W metodzie tej na podstawie odpowiednich schematów kolorów wykrywa się wszystkie elementy na obrazie zgodne z danym schematem. W celu zlokalizowania twarzy należy dodatkowo przeprowadzić po niej selekcję po kształcie i rozmiarze wykrytych regionów.
+
+\begin{figure}
+ \only<1> {\includegraphics[scale=0.4]{skin_detection.jpg}}
+\caption{Wykrywanie obszarów o kolorze skóry}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Metoda analizy kolorów}
+
+Zalety:
+\begin{itemize}
+\item szybkość działania
+\item brak ograniczeń odnośnie orientacji oraz rozmiaru twarzy
+\end{itemize}
+
+\vspace{10pt}
+\uncover <2-> {
+Wady:
+\begin{itemize}
+\item baza schematów kolorów jest ograniczona
+\item duża podatność metody na natężenie jasności zdjęcia
+\item obiekty o kolorze podobnym do koloru skóry są także wykrywane (np. ręce, szyja)
+\end{itemize}}
 
 \end{frame}
 
@@ -152,6 +202,7 @@ Wady:
 \item  Słabe wyniki dla osób z długimi ciemnymi włosami
 \end{itemize}}
 \end{frame}
+
 \section{Porównianie}
 
 \begin{frame}
