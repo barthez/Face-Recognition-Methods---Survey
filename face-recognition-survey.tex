@@ -68,13 +68,41 @@ Krzysztof \textsc{Śmiłek}\\
 
 \newpage
 
-\section{Wstep}
+\section{Wstęp}
 
 Rozpoznawanie twarzy od zawsze było dla ludzi najbardziej naturalnym sposobem identyfikacji osób. Małe dzieci bez trudu rozpoznają twarze swoich rodziców. Nie sprawia nam również większego problemu odnajdywanie twarzy nawet na bardzo złożonych obrazach. Potrafimy też określić płeć, przybliżony wiek i pochodzenie tylko na podstawie zdjęcia twarzy danej osoby. Nie dziwi więc fakt, że w dobie prężnie rozwijającej się technologii, coraz szybszych komputerów i ogólnego postępu szukamy sposobów na w pełni automatyczne, cyfrowe metody odnajdywania oraz rozpoznawania twarzy. Zastosowań takich rozwiązań nie trzeba długo szukać: począwszy od rozrywki (konsole nowej generacji, rozpoznawanie osób i uśmiechu w aparatach fotograficznych) przez metody autoryzacji (logowanie na komputerze, w banku) a skończywszy na bezpieczeństwie kraju (rozpoznawanie terrorystów na lotnisku).  Zagadnienie to nie jest nowe, powstało już wiele mniej lub bardziej skutecznych algorytmów. Celem niniejszej pracy jest przegląd popularniejszych rozwiązań i próba ich porównania.
 
 \subsection{Problem rozpoznawania twarzy i ogólny algorytm}
 
-Rozpoznanie twarzy na obrazie nie jest trywialnym problemem. Składa się ono z kilku etapów o różnej złożoności. Na złożoność zadania wpływa to, że trudne jest uzyskanie zdjęcia twarzy na jednolitym tle i zawsze w tej samej pozycji. Czasami do akwizycji obrazu twarzy stosuje się inne metody niż normlane zdjęce 2D. Często wykorzystywane metody to obrazy termowizyjne dostarczajęce dodatkowych informacji o rozkładzie temperatur na twarzy oraz metody operujące na obrazach 3D, uzyskanych zapomocą stereowizji lub specjalnych skanerów. Po akwizycji obraz następuje etap wyszukiwania wzorców które są kandydatami na bycie twarzą. Najprostrze metody to te bazujące na kolorze twarzy. Innymi metodami są metody statystyczne jak również sieci neuronowe (które wykorzystywane są nie tylko do lokalizacji, ale i do klasyfikacji twarzy). Wykryte obiekty są następne klasyfikowane poprzez porównywanie wektorów cech wyliczonych ze znalezionych obiektów. Głowne metody ekstrakcji cech to metody strukturalne (opis lokalnych cech twarzy tj. oczy, usta czy nos za pomocą współrzednych czy parametrów statystycznych) oraz metody całościowe gdzie cała twarz dostarcza danych do analizy np. PCA.
+Rozpoznanie twarzy na obrazie nie jest trywialnym problemem. Składa się ono z kilku etapów o różnej złożoności.
+
+Pierwszym etapem jest akwizycja obrazu. Zadanie to jest o tyle trudne o ile trudno jest otrzymać dobry obraz twarzy \emph{en face} na jednolitym tle. W systemach monitoringu taka sytuacja jest prawie niemożliwa. Dlatego dodatkowym zadaniem jest preprocesing obrazu mający na celu uwydatnienie cech charakterystycznych ułatwiających lokalizację. Oprócz tradycyjnej akwizycji kolorowego obrazu 2D wykorzystywane są zdjęcia termowizyjne, które dostarczają  informacji o rozkładzie temperatur oraz obrazy 3D uzyskane metodą stereowizji lub ze specjalnych skanerów.
+
+Kolejnym etapem po akwizycji i preprocesingu jest lokalizacja obiektów które pasują do opisu podstawowych cech twarzy jak kolor czy kształt. Zlokalizowane obiekty są następnie opisywane wektorem cech i klasyfikowane metodami statystycznymi lub przy użyciu sieci neuronowych. Ekstrakcja cech odbywa się za pomocą metod strukturalnych bazujących na cechach lokalnych twarzy oraz metody całościowe, np. PCA.
+
+\subsection{Podział metod}
+
+Metody rozpoznawania twarzy można podzielić na cztery kategorie\cite{YANG001}:
+
+\subsubsection{Metody oparte na wiedzy}
+
+Metoda bazująca na ludzkiej wiedzy tym z jakich elementów i jaki relacji między tymi elementami składa się twarz. Metody te są stosowane głownie do lokalizacji twarzy.
+
+W tym podejściu rozpoznanie twarzy polega na definicji reguł wyprowadzony ze studiów na budową ludzkiej twarzy. Można założyć, że twarz na obrazie zwykle pojawia się z dwojgiem oczu, nosem i ustami. Relacjami między tymi elementami może być względna odległość lub położenie.
+
+Trudnością w tym podejściu jest przełożenie wiedzy na dobrze zdefiniowane reguły. Jeśli reguły są zbyt ścisłe, zostaje odrzuconych zbyt wiele prawdziwych twarzy, znowu, gdy reguły są zbyt ogólne dostajemy zbyt wiele fałszywych dopasowań.
+
+\subsubsection{Podejście oparte o cechy stałe}
+
+Podejście to ma na celu wyszukiwanie cech które nie są zależne od oświetlenia czy ułożenia twarzy. Cechy takie jak brwi, oczy, nos, usta czy linia włosów są dobrze wykrywane przez filtry gradientowe. Inną cechą niezmienniczą może być również kolor skóry, który daje się łatwo wyekstrahować w odpowiedniej przestrzeni kolorów. Bazując na uzyskanych cechach budowany jest ich model statystyczny do określenia zależności miedzy cechami i do weryfikacji istnienia twarzy.
+
+\subsubsection{Metody dopasowania wzorców}
+
+W metodach dopasowywania wzorców standardowy szablon jest ręcznie zdefiniowany i parametryzowany przez funkcję. Z obrazem wejściowym liczona jest korelacja miedzy standardowym szablonem i to ona determinuje istnienie twarzy na obrazie. Zaletą tych rozwiązań jest prostota implementacji. Rozszerzeniem metody są deformowalne szablony mogące dopasować się do pozycji, skali i kształtu znalezionej twarzy.
+
+\subsubsection{Metody oparte o wygląd}
+
+W przeciwieństwie do metody dopasowania wzorców szablony są "wyuczone" z przykładowych obrazów. Ogólnie metody te działają w oparciu o techniki analizy statycznej i uczenia maszynowego w calu znalezienia charakterystyki dla obrazów z twarzą i bez. Wyuczona charakterystyka reprezentowana jest jako model rozkładu prawdopodobieństwa lub funkcji dyskryminacyjnej. Redukcja wymiarów modelu jest zależna od potrzebnej wydajności obliczeń i jej jakości.
 
 \section{Metody Rozpoznawania Twarzy}
 
@@ -98,7 +126,10 @@ W metodzie tej na podstawie odpowiednich schematów kolorów wykrywa się wszyst
 \item obiekty o kolorze podobnym do koloru skóry są także wykrywane
 \end{itemize}
 
-\subsection{Metoda Sieci neuronowych}
+\subsection{Klasyfikacja za pomocą sieci neuronowych}
+
+Sieci neuronowe są bardzo dobrym narzędziem uczenia maszynowego, wykorzystywanym w wielu dziedzinach do klasyfikacji i wspomagania decyzji. Działanie sieci neuronowej ma odwzorowywać sposób w jaki pracują grupy neuronów w ludzkim mózgu. Sieć neuronowa przyjmuje na wejście zestaw wartości, zwracając na końcu odpowiedź zależną od stanu wyuczenia sieci. W rozpoznawaniu twarzy sieć może dostawać na wejście wektor cech opisujący zlokalizowany obiekt lub cały obraz (CNN).
+
 Operację wykrywania twarzy za pomocą tego systemu można podzielić na 3 główne składowe:
 \begin{enumerate}
 \item Inicjalizacja (projektowanie i tworzenie sieci neuronowych)
@@ -107,8 +138,7 @@ Operację wykrywania twarzy za pomocą tego systemu można podzielić na 3 głó
 \end{enumerate}
 
 \noindent 
-Do tego celu tworzone są jednokierunkowe warstwowe sieci neuronowe, które są trenowane przy użyciu metody wstecznej propagacji. Dane treningowe zawierają obrazy z twarzami lub bez. Przepuszczając przez sieć wybrany obraz, równocześnie na wyjściu z sieci ustalamy ostateczny wynik (1 – twarz, -1 – obraz bez twarzy).  Dzięki wspomnianej wcześniej metody wstecznej propagacji, na podstawie wyjścia z całej sieci, komórki wewnętrzne są w stanie same kalibrować swoje wartości tak, aby sprostać wymogom całej sieci.\\
-Poddając dany obraz badaniu na obecność twarzy, jest on skalowany i dzielony na okna, które są indywidualnie przepuszczane przez sieć. Okna, które zawierają twarze są otaczane obwiednią, następnie wszystkie okna są łączone ponownie w całość i następuje skalowanie obrazu do pierwotnego rozmiaru. Dzięki temu na obrazie końcowym możemy ujrzeć przeskalowane prostokąty, które wskazują, w którym konkretnie miejscu znaleziono twarze.
+Konwolucyjne sieci neuronowe (CNN) pozwalając ominąć proces obróbki obrazu i ekstracji cech, wadą jest trudniejszy etap uczenia sieci. Taka sieć uczona jest małymi obrazkami z samymi twarzami, a parametry sieci regulowane są za pomocą metody wstecznej propagacji. W celu lokalizacji twarzy na wejście podawany jest cały obraz, a na wyjściu zmniejszony obraz punktów w których znajdują się twarze. Po odpowiednim przeskalowaniu wyjścia otrzymujemy dokładną mapę lokalizacji i rozmiarów twarzy.
 
 \vspace*{1cm}
 \includegraphics[scale=0.65]{cnn.png}
@@ -169,6 +199,7 @@ Wady:
 
 \section{Bibliografia}
 
+\bibliographystyle{plain}
 \bibliography{bibliography}
 
 \end{document}
