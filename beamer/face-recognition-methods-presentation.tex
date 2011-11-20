@@ -62,8 +62,15 @@ Krzysztof Śmiłek\\}
 
 \subsection{Problem i ogólny algorytm}
 \begin{frame}
-  \frametitle{Problem rozpoznawania twarzy}
-    01:04 póżno już, idę spać\\tsm
+\frametitle{Problem rozpoznawania twarzy}
+
+Podstawowym problemem w rozpoznawaniu twarzy jest jej własciwa akwizycja. Uzyskanie obrazu z twarzą zwróconą do kamery na jednolitym tle jest nie możliwe w wielu przypadkach zastosowania metody.
+\pause
+
+Aby zwalczyć te problemy wykorzystuje się preprocesing lub akwizycje niosącą wiecej cech (obrazy termowizyje lub stereowizyjne).
+\pause
+
+Problemem klasyfikacji obiektów jest to, że trudno opisać nie zmiennicze cechy w tak zróżnicowanym obiekcie jakim jest twarz.   
 
 \end{frame}
 
@@ -71,7 +78,11 @@ Krzysztof Śmiłek\\}
 \begin{frame}
   \frametitle{Ogólny algorytm}
 
-Jakiś schemat systemu??
+\begin{enumerate}
+\item Akwizycja obrazu (uzyskanie obrazu pozwalającego na lokalizacje twarzy) \pause
+\item Ekstrakcja cech (opisanie wybranych obiektów) \pause
+\item Klasyfikacja (określenie obiektów jako twarz lub nie)
+\end{enumerate}
    
 \end{frame}
 
