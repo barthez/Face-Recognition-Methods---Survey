@@ -32,17 +32,20 @@ Krzysztof Śmiłek\\}
 
 \begin{document}
 
+%==============================
 \begin{frame}
   \titlepage
 \end{frame}
 
 
+%==============================
 \begin{frame}
   \frametitle{Plan}
   \tableofcontents
 \end{frame}
 
 
+%=============================================================
 \section{Wstęp}
 
 \begin{frame}
@@ -63,6 +66,8 @@ Krzysztof Śmiłek\\}
     01:04 póżno już, idę spać\\tsm
 
 \end{frame}
+
+%==============================
 \begin{frame}
   \frametitle{Ogólny algorytm}
 
@@ -71,14 +76,18 @@ Jakiś schemat systemu??
 \end{frame}
 
 
+%=============================================================
 \section{Metody rozpoznawania twarzy}
 
+%=============================================================
 \subsection{Metody geometryczne}
 \begin{frame}
   \frametitle{Metody geometryczne}
 
 Jest to jedno z pierwszych, najbardziej intuicyjnych podejść w dziedzinie rozpoznawania twarzy. \\
-Twarz charakteryzowana jest przez zbiór wartości kątów, odległości czy też pól wyznaczonych w oparciu o charakterystyczne punkty na obrazie. Badane są między innymi:
+Twarz charakteryzowana jest przez zbiór wartości kątów, odległości czy też pól wyznaczonych w oparciu \\
+o charakterystyczne punkty na obrazie. \\
+Badane są między innymi:
 \begin{itemize}
 \item szerokość/wysokość twarzy
 \item szerokość/długość nosa
@@ -87,6 +96,7 @@ Twarz charakteryzowana jest przez zbiór wartości kątów, odległości czy te�
 \end{itemize}
 \end{frame}
 
+%==============================
 \begin{frame}
   \frametitle{Metody geometryczne}
  
@@ -110,6 +120,7 @@ Obecnie, podejście to praktycznie nie jest już rozwijane, gdyż istnieją mech
 
 \end{frame}
 
+%=============================================================
 \subsection{Metoda analizy kolorów}
 \begin{frame}
   \frametitle{Metoda analizy kolorów}
@@ -123,13 +134,14 @@ W metodzie tej na podstawie odpowiednich schematów kolorów wykrywa się wszyst
 
 \end{frame}
 
+%==============================
 \begin{frame}
   \frametitle{Metoda analizy kolorów}
 
 Zalety:
 \begin{itemize}
-\item szybkość działania
-\item brak ograniczeń odnośnie orientacji oraz rozmiaru twarzy
+	\item szybkość działania
+	\item brak ograniczeń odnośnie orientacji oraz rozmiaru twarzy
 \end{itemize}
 
 \vspace{10pt}
@@ -139,18 +151,94 @@ Wady:
 \item baza schematów kolorów jest ograniczona
 \item duża podatność metody na natężenie jasności zdjęcia
 \item obiekty o kolorze podobnym do koloru skóry są także wykrywane (np. ręce, szyja)
-\end{itemize}}
+\end{itemize}
+}
 
 \end{frame}
 
+%=============================================================
 \subsection{Metoda sieci neuronowych}
 \begin{frame}
   \frametitle{Metoda sieci neuronowych}
 
-  dodać info o metodzie
+\begin{itemize}
+\item Jedna z najczęściej używanych metod rozpoznawania twarzy
+\item Odwzorowuje sposób działania neuronów w ludzkim mózgu
+\item Przyjmuje na wejście wektor cech opisujący zlokalizowany obiekt, bądź cały obraz (CNN)
+\item Zwraca na wyjście konkretną odpowiedź, w zależności od stanu wyuczenia sieci\\ (czy na obrazie jest twarz, czy też nie)
+\end{itemize}
 
 \end{frame}
 
+%==============================
+\begin{frame}
+  \frametitle{Metoda sieci neuronowych}
+
+Operację wykrywania twarzy za pomocą tej metody dzielimy na 3 etapy:
+\begin{itemize}
+\item Inicjalizacja\\ (projektowanie i tworzenie sieci neuronowych)
+\item Trening\\ (wybór danych do trenowania, wybór cech, trenowanie)
+\item Klasyfikacja\\ (skanowanie obrazów w celu zlokalizowania twarzy)
+\end{itemize}
+
+\end{frame}
+
+%==============================
+\begin{frame}
+  \frametitle{Konwolucyjne sieci neuronowe (CNN)}
+
+\uncover <1-> {
+Konwolucyjne sieci neuronowe (CNN) pozwalają ominąć proces obróbki obrazu i ekstrakcji cech, kosztem trudniejszego etapu uczenia sieci.\\[\baselineskip]
+}
+\uncover <2-> {
+Sieć uczona jest małymi obrazkami z samymi twarzami, a parametry sieci regulowane są za pomocą metody wstecznej propagacji.\\[\baselineskip]
+}
+\uncover <3-> {
+W celu lokalizacji twarzy na wejście podawany jest cały obraz, a na wyjściu zmniejszony obraz punktów w których znajdują się twarze.\\[\baselineskip]
+}
+\uncover <4-> {
+Po odpowiednim przeskalowaniu wyjścia otrzymujemy dokładną mapę lokalizacji i rozmiarów twarzy.
+}
+\end{frame}
+
+%==============================
+\begin{frame}
+  \frametitle{Konwolucyjne sieci neuronowe (CNN)}
+
+	\begin{figure}
+    		\only<1> {\includegraphics[scale=0.4]{cnn.png}}
+		\caption{a) przyklad konwolucyjnej sieci neuronowej (CNN) b) Operacja konwolucji i subsamplingu}
+	\end{figure}
+
+\end{frame}
+
+%==============================
+\begin{frame}
+  \frametitle{Metoda sieci neuronowych}
+
+\uncover <1-> { 
+	Zalety:
+	\begin{itemize}
+		\item Bardzo dobre rozpoznawanie wzorców
+		\item Praca z zaszumianymi i niepełnymi danymi
+		\item Możliwość pracy równoległa z wielu wejść
+		\item Rozwiązanie problemu bez jego dogłębnej analizy
+		\item Duża tolerancja na błędy
+	\end{itemize}
+}
+
+\vspace{10pt}
+\uncover <2-> {
+	Wady:
+	\begin{itemize}
+	\item  Długi czas uczenia
+	\item Sukces uczenia nie jest gwarantowany
+	\item Problemy z wyborem danych do treningu sieci
+	\end{itemize}
+}
+\end{frame}
+
+%=============================================================
 \subsection{Model aktywnego kształtu}
 \begin{frame}
   \frametitle{Model aktywnego kształtu}
@@ -163,6 +251,7 @@ Wady:
  \end{itemize}
 \end{frame}
 
+%==============================
 \begin{frame}
   \frametitle{Model aktywnego kształtu - maska}
 \begin{center}
@@ -175,6 +264,7 @@ Wady:
 \end{center}
 \end{frame}
 
+%==============================
 \begin{frame}
   \frametitle{Model aktywnego kształtu \\ - lista kroków wyszukiwania obiektu}
   \begin{itemize}
@@ -185,6 +275,7 @@ Wady:
 \end{itemize}
 \end{frame}
 
+%==============================
 \begin{frame}
   \frametitle{Model aktywnego kształtu - podsumowanie}
    \uncover <1-> { Zalety:
@@ -203,6 +294,7 @@ Wady:
 \end{itemize}}
 \end{frame}
 
+%=============================================================
 \section{Porównianie}
 
 \begin{frame}
@@ -212,6 +304,7 @@ Wady:
 
 \end{frame}
 
+%=============================================================
 \section{Podsumowanie}
 
 \begin{frame}
@@ -220,7 +313,5 @@ Wady:
   parę słów podsumowania tutaj
 
 \end{frame}
-
-
 
 \end{document}
