@@ -138,7 +138,7 @@ Operację wykrywania twarzy za pomocą tego systemu można podzielić na 3 głó
 \end{enumerate}
 
 \noindent 
-Konwolucyjne sieci neuronowe (CNN) pozwalając ominąć proces obróbki obrazu i ekstracji cech, wadą jest trudniejszy etap uczenia sieci. Taka sieć uczona jest małymi obrazkami z samymi twarzami, a parametry sieci regulowane są za pomocą metody wstecznej propagacji. W celu lokalizacji twarzy na wejście podawany jest cały obraz, a na wyjściu zmniejszony obraz punktów w których znajdują się twarze. Po odpowiednim przeskalowaniu wyjścia otrzymujemy dokładną mapę lokalizacji i rozmiarów twarzy.
+Konwolucyjne sieci neuronowe (CNN) pozwalając ominąć proces obróbki obrazu i ekstrakcji cech, wadą jest trudniejszy etap uczenia sieci. Taka sieć uczona jest małymi obrazkami z samymi twarzami, a parametry sieci regulowane są za pomocą metody wstecznej propagacji. W celu lokalizacji twarzy na wejście podawany jest cały obraz, a na wyjściu zmniejszony obraz punktów w których znajdują się twarze. Po odpowiednim przeskalowaniu wyjścia otrzymujemy dokładną mapę lokalizacji i rozmiarów twarzy.
 
 \vspace*{1cm}
 \includegraphics[scale=0.65]{cnn.png}
@@ -163,7 +163,7 @@ Wady:
 \end{itemize}
 
 \subsection{Model aktywnego kształtu}
-Tim Cootes i Chris Taylor w roku 1995 opracowali metodę modelu aktywnego kształtu (Active Shape Model). Jest to model statyczny, w którym jego kształt poprzez dozwolone deformacje próbuje się automatycznie dopasowywać do obiektu znajdującego się na obrazie. Określa się wzorzec obiektu jako model rozkładu punktów (Point Distribution Model), czyli zbiór etykietowanych punktów określających poszukiwany kształt. Następnie przeprowadzany jest proces uczenia w którym zbiera się informacje o różnych modyfikacjach wzorca. W tym celu przeważnie na kolejne zdjęcia testowe twarzy nanosi są ręcznie punkty charakterystyczne. Otrzymane wektory punktów poddaje się procesowi normalizacji (taki model będzie można dowolnie przeskalowywać, zachowana jest jedynie informacja o kształcie). Na koniec należy obliczyć kształt średni, odchylenie od średniej dla każdego elementu zbioru uczącego oraz obliczyć wektory własne odpowiedniej macierzy kowariancji. Konstruuje się model utworzony z średniego kształtu i sumy ważonej najbardziej charakterystycznych deformacji. Algorytm pozwala na deformację kształtu średniego tylko w ograniczonym zakresie.\\
+Tim Cootes i Chris Taylor w roku 1995 opracowali metodę modelu aktywnego kształtu (Active Shape Model)\cite{SMIA001}. Jest to model statyczny, w którym jego kształt poprzez dozwolone deformacje próbuje się automatycznie dopasowywać do obiektu znajdującego się na obrazie. Określa się wzorzec obiektu jako model rozkładu punktów (Point Distribution Model), czyli zbiór etykietowanych punktów określających poszukiwany kształt. Następnie przeprowadzany jest proces uczenia w którym zbiera się informacje o różnych modyfikacjach wzorca. W tym celu przeważnie na kolejne zdjęcia testowe twarzy nanosi są ręcznie punkty charakterystyczne. Otrzymane wektory punktów poddaje się procesowi normalizacji (taki model będzie można dowolnie przeskalowywać, zachowana jest jedynie informacja o kształcie). Na koniec należy obliczyć kształt średni, odchylenie od średniej dla każdego elementu zbioru uczącego oraz obliczyć wektory własne odpowiedniej macierzy kowariancji. Konstruuje się model utworzony z średniego kształtu i sumy ważonej najbardziej charakterystycznych deformacji. Algorytm pozwala na deformację kształtu średniego tylko w ograniczonym zakresie.\\
 \\
 \noindent
 Lista kroków algorytmu wyszukiwania obiektu:
@@ -200,7 +200,7 @@ Najstarszą z opracowywanych przez nas metod jest metoda geometryczna. Doczekał
 
 \section{Podsumowanie}
 
-Spośród omawianych przez nas metod każda ma zalety, ale też pewne słabości związane głównie ze zróżnicowanymi warunkami pozalaboratoryjnymi. W teorii osiąga się skuteczność na poziomie ponad 90\%. Życie jednak w praktyce weryfikuje przechwałki naukowców. Na przykład systemy automatycznego rozpoznawania przestępców w wielu krajach, które podjęły się pilotażowego ich wprowadzenia nie przyniosły wymiernych efektów. Mimo wszystko odnotowuje się kilkunasto do kilkudziesięcio procentową poprawę efektywności stosowanych metod z roku na rok. Problem pozostaje otwarty i coraz więcej ośrodków naukowych oraz wielkich korporacji prowadzi badania w tym kierunku. Organizowanych jest też wiele prestiżowych konkursów takich jak Face Recognition Grand Challenge.
+Spośród omawianych przez nas metod każda ma zalety, ale też pewne słabości związane głównie ze zróżnicowanymi warunkami pozalaboratoryjnymi. W teorii osiąga się skuteczność na poziomie ponad 90\%. Życie jednak w praktyce weryfikuje przechwałki naukowców. Na przykład systemy automatycznego rozpoznawania przestępców w wielu krajach, które podjęły się pilotażowego ich wprowadzenia nie przyniosły wymiernych efektów \cite{SMIA002}. Mimo wszystko odnotowuje się kilkunasto do kilkudziesięcio procentową poprawę efektywności stosowanych metod z roku na rok. Problem pozostaje otwarty i coraz więcej ośrodków naukowych oraz wielkich korporacji prowadzi badania w tym kierunku. Organizowanych jest też wiele prestiżowych konkursów takich jak Face Recognition Grand Challenge \cite{FRGC001}.
 
 \section{Bibliografia}
 
