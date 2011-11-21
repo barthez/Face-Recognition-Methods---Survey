@@ -11,53 +11,61 @@
 \headcommand {\beamer@subsectionentry {0}{1}{1}{5}{Problem i og\IeC {\'o}lny algorytm}}\headcommand {\beamer@subsectionpages {3}{4}}
 \headcommand {\slideentry {1}{1}{1}{5/7}{Problem i og\IeC {\'o}lny algorytm}{0}}
 \headcommand {\beamer@framepages {5}{7}}
-\headcommand {\slideentry {1}{1}{2}{8/10}{Problem i og\IeC {\'o}lny algorytm}{0}}
-\headcommand {\beamer@framepages {8}{10}}
-\headcommand {\sectionentry {2}{Metody rozpoznawania twarzy}{11}{Metody rozpoznawania twarzy}{0}}
-\headcommand {\beamer@sectionpages {3}{10}}
-\headcommand {\beamer@subsectionpages {5}{10}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{11}{Metody geometryczne}}\headcommand {\beamer@subsectionpages {11}{10}}
-\headcommand {\slideentry {2}{1}{1}{11/11}{Metody geometryczne}{0}}
-\headcommand {\beamer@framepages {11}{11}}
-\headcommand {\slideentry {2}{1}{2}{12/14}{Metody geometryczne}{0}}
-\headcommand {\beamer@framepages {12}{14}}
-\headcommand {\beamer@subsectionentry {0}{2}{2}{15}{Metoda analizy kolor\IeC {\'o}w}}\headcommand {\beamer@subsectionpages {11}{14}}
-\headcommand {\slideentry {2}{2}{1}{15/15}{Metoda analizy kolor\IeC {\'o}w}{0}}
-\headcommand {\beamer@framepages {15}{15}}
-\headcommand {\slideentry {2}{2}{2}{16/17}{Metoda analizy kolor\IeC {\'o}w}{0}}
-\headcommand {\beamer@framepages {16}{17}}
-\headcommand {\beamer@subsectionentry {0}{2}{3}{18}{Metoda sieci neuronowych}}\headcommand {\beamer@subsectionpages {15}{17}}
-\headcommand {\slideentry {2}{3}{1}{18/18}{Metoda sieci neuronowych}{0}}
-\headcommand {\beamer@framepages {18}{18}}
-\headcommand {\slideentry {2}{3}{2}{19/19}{Metoda sieci neuronowych}{0}}
-\headcommand {\beamer@framepages {19}{19}}
-\headcommand {\slideentry {2}{3}{3}{20/23}{Metoda sieci neuronowych}{0}}
-\headcommand {\beamer@framepages {20}{23}}
-\headcommand {\slideentry {2}{3}{4}{24/24}{Metoda sieci neuronowych}{0}}
-\headcommand {\beamer@framepages {24}{24}}
-\headcommand {\slideentry {2}{3}{5}{25/26}{Metoda sieci neuronowych}{0}}
-\headcommand {\beamer@framepages {25}{26}}
-\headcommand {\beamer@subsectionentry {0}{2}{4}{27}{Model aktywnego kszta\IeC {\l }tu}}\headcommand {\beamer@subsectionpages {18}{26}}
-\headcommand {\slideentry {2}{4}{1}{27/31}{Model aktywnego kszta\IeC {\l }tu}{0}}
-\headcommand {\beamer@framepages {27}{31}}
-\headcommand {\slideentry {2}{4}{2}{32/34}{Model aktywnego kszta\IeC {\l }tu}{0}}
-\headcommand {\beamer@framepages {32}{34}}
-\headcommand {\slideentry {2}{4}{3}{35/35}{Model aktywnego kszta\IeC {\l }tu}{0}}
-\headcommand {\beamer@framepages {35}{35}}
-\headcommand {\slideentry {2}{4}{4}{36/37}{Model aktywnego kszta\IeC {\l }tu}{0}}
-\headcommand {\beamer@framepages {36}{37}}
-\headcommand {\sectionentry {3}{Por\IeC {\'o}wnianie}{38}{Por\IeC {\'o}wnianie}{0}}
-\headcommand {\beamer@sectionpages {11}{37}}
-\headcommand {\beamer@subsectionpages {27}{37}}
-\headcommand {\slideentry {3}{0}{5}{38/38}{}{0}}
-\headcommand {\beamer@framepages {38}{38}}
-\headcommand {\sectionentry {4}{Podsumowanie}{39}{Podsumowanie}{0}}
-\headcommand {\beamer@sectionpages {38}{38}}
-\headcommand {\beamer@subsectionpages {38}{38}}
-\headcommand {\slideentry {4}{0}{6}{39/39}{}{0}}
-\headcommand {\beamer@framepages {39}{39}}
-\headcommand {\beamer@partpages {1}{39}}
-\headcommand {\beamer@subsectionpages {39}{39}}
-\headcommand {\beamer@sectionpages {39}{39}}
-\headcommand {\beamer@documentpages {39}}
-\headcommand {\def \inserttotalframenumber {20}}
+\headcommand {\sectionentry {2}{Na weso\IeC {\l }o}{8}{Na weso\IeC {\l }o}{0}}
+\headcommand {\beamer@sectionpages {3}{7}}
+\headcommand {\beamer@subsectionpages {5}{7}}
+\headcommand {\slideentry {2}{0}{2}{8/8}{}{0}}
+\headcommand {\beamer@framepages {8}{8}}
+\headcommand {\slideentry {2}{0}{3}{9/11}{}{0}}
+\headcommand {\beamer@framepages {9}{11}}
+\headcommand {\sectionentry {3}{Metody rozpoznawania twarzy}{12}{Metody rozpoznawania twarzy}{0}}
+\headcommand {\beamer@sectionpages {8}{11}}
+\headcommand {\beamer@subsectionpages {8}{11}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{12}{Metody geometryczne}}\headcommand {\beamer@subsectionpages {12}{11}}
+\headcommand {\slideentry {3}{1}{1}{12/12}{Metody geometryczne}{0}}
+\headcommand {\beamer@framepages {12}{12}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{13}{Metody geometryczne}}\headcommand {\beamer@subsectionpages {12}{12}}
+\headcommand {\slideentry {3}{2}{1}{13/13}{Metody geometryczne}{0}}
+\headcommand {\beamer@framepages {13}{13}}
+\headcommand {\slideentry {3}{2}{2}{14/16}{Metody geometryczne}{0}}
+\headcommand {\beamer@framepages {14}{16}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{17}{Metoda analizy kolor\IeC {\'o}w}}\headcommand {\beamer@subsectionpages {13}{16}}
+\headcommand {\slideentry {3}{3}{1}{17/17}{Metoda analizy kolor\IeC {\'o}w}{0}}
+\headcommand {\beamer@framepages {17}{17}}
+\headcommand {\slideentry {3}{3}{2}{18/19}{Metoda analizy kolor\IeC {\'o}w}{0}}
+\headcommand {\beamer@framepages {18}{19}}
+\headcommand {\beamer@subsectionentry {0}{3}{4}{20}{Metoda sieci neuronowych}}\headcommand {\beamer@subsectionpages {17}{19}}
+\headcommand {\slideentry {3}{4}{1}{20/20}{Metoda sieci neuronowych}{0}}
+\headcommand {\beamer@framepages {20}{20}}
+\headcommand {\slideentry {3}{4}{2}{21/21}{Metoda sieci neuronowych}{0}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\slideentry {3}{4}{3}{22/25}{Metoda sieci neuronowych}{0}}
+\headcommand {\beamer@framepages {22}{25}}
+\headcommand {\slideentry {3}{4}{4}{26/26}{Metoda sieci neuronowych}{0}}
+\headcommand {\beamer@framepages {26}{26}}
+\headcommand {\slideentry {3}{4}{5}{27/28}{Metoda sieci neuronowych}{0}}
+\headcommand {\beamer@framepages {27}{28}}
+\headcommand {\beamer@subsectionentry {0}{3}{5}{29}{Model aktywnego kszta\IeC {\l }tu}}\headcommand {\beamer@subsectionpages {20}{28}}
+\headcommand {\slideentry {3}{5}{1}{29/33}{Model aktywnego kszta\IeC {\l }tu}{0}}
+\headcommand {\beamer@framepages {29}{33}}
+\headcommand {\slideentry {3}{5}{2}{34/36}{Model aktywnego kszta\IeC {\l }tu}{0}}
+\headcommand {\beamer@framepages {34}{36}}
+\headcommand {\slideentry {3}{5}{3}{37/37}{Model aktywnego kszta\IeC {\l }tu}{0}}
+\headcommand {\beamer@framepages {37}{37}}
+\headcommand {\slideentry {3}{5}{4}{38/39}{Model aktywnego kszta\IeC {\l }tu}{0}}
+\headcommand {\beamer@framepages {38}{39}}
+\headcommand {\sectionentry {4}{Por\IeC {\'o}wnianie}{40}{Por\IeC {\'o}wnianie}{0}}
+\headcommand {\beamer@sectionpages {12}{39}}
+\headcommand {\beamer@subsectionpages {29}{39}}
+\headcommand {\slideentry {4}{0}{5}{40/40}{}{0}}
+\headcommand {\beamer@framepages {40}{40}}
+\headcommand {\sectionentry {5}{Podsumowanie}{41}{Podsumowanie}{0}}
+\headcommand {\beamer@sectionpages {40}{40}}
+\headcommand {\beamer@subsectionpages {40}{40}}
+\headcommand {\slideentry {5}{0}{6}{41/41}{}{0}}
+\headcommand {\beamer@framepages {41}{41}}
+\headcommand {\beamer@partpages {1}{41}}
+\headcommand {\beamer@subsectionpages {41}{41}}
+\headcommand {\beamer@sectionpages {41}{41}}
+\headcommand {\beamer@documentpages {41}}
+\headcommand {\def \inserttotalframenumber {22}}
